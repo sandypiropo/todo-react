@@ -1,9 +1,9 @@
 body {
     background-color: rgb(255, 255, 255);
     background-size: cover;
-    color: rgb(0, 0, 0);
+    color: rgb(19, 19, 19);
     font-family: "Andale Mono", monospace;
-    font-size: 15px;
+    font-size: 16px;
     margin: 0;
     display: flex;
     justify-content: center; /* Centraliza o conteúdo horizontalmente */
@@ -15,10 +15,108 @@ body {
     height: 100%;
   }
   
-  body {
-    flex-direction: column;
+  .rounded-input {
+
+    width: 90%; /* Define a largura desejada do campo */
+    padding: 10px; /* Adiciona algum espaçamento interno para melhor aparência */
+    border: 1px solid #ccc; /* Adiciona uma borda */
+    border-radius: 50px; /* Define cantos arredondados */
+    font-size: 16px; /* Define o tamanho da fonte */
   }
+
+   
+  .div-form-row { /*alinha o botão de add ao inpuy*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .rounded-input {
+
+    width: 90%; /* Define a largura desejada do campo */
+    padding: 10px; /* Adiciona algum espaçamento interno para melhor aparência */
+    border: 1px solid #ccc; /* Adiciona uma borda */
+    border-radius: 5px; /* Define cantos arredondados */
+    font-size: 16px; /* Define o tamanho da fonte */
+  }
+
+  .container { /* Cria a caixa no meio da tela */
+    width: 400px;
+    margin: 0 auto;
+    background-color: #ffffff00;
+    padding: 30px;
+    border-radius: 20px;
+    justify-content: space-between;
+    border: 2px solid gray; /* Adiciona uma borda cinza */
+  }  
   
-  main {
-    flex-grow: 1;
+  .todo-list {
+    list-style-type: none; /*tirando a bolinha da lista*/
+  }
+
+  .div-todo-container {
+    display: flex;
+    align-items: center;
+  }
+
+ .todo-label {
+    display: flex;
+    justify-content: flex-start;
+    flex: 1;
+    display:inline-block;
+    font:18px Lucida;
+    margin-left: 0;
+  }
+
+  .align-right {
+    margin-right: auto;
+  }
+
+  .btn-delete {
+    border-radius: 10px;
+    border-style:hidden
+  }
+
+  .todo-list {
+    list-style-type: none; /*tirando a bolinha da lista*/
+  }
+
+  .todo-container {
+    display: flex;
+    align-items: center;
+  }
+
+  .todo-label {
+    display: flex;
+    justify-content: flex-start;
+    flex: 1;
+    display:inline-block;
+    font:18px Lucida;
+    margin-left: 0;
+  }
+
+  .align-right {
+    margin-right: auto;
+  }
+
+  .btn-delete {
+    max-width: 100%; /* Define a largura desejada do campo */
+    padding: 10px; /* Adiciona algum espaçamento interno para melhor aparência */
+    border: 1px solid #8a8686; /* Adiciona uma borda */
+    border-radius: 5px; /* Define cantos arredondados */
+    font-size: 16px; /* Define o tamanho da fonte */
+
+  }
+
+  .checkbox {
+  margin-right: 5px;
+  }
+
+  .btn-add {
+    width: 30%; /* Define a largura desejada do campo */
+    padding: 10px; /* Adiciona algum espaçamento interno para melhor aparência */
+    border: 1px solid #ccc; /* Adiciona uma borda */
+    border-radius: 5px; /* Define cantos arredondados */
+    font-size: 16px; /* Define o tamanho da fonte */
+
   }

@@ -8,7 +8,6 @@ export default function App() {
   const [todos, setTodos] = useState(() => {
     const localValue = localStorage.getItem("ITEMS")
     if (localValue == null) return []
-    
     return JSON.parse(localValue)
   })
 
@@ -44,10 +43,15 @@ function deleteTodos(id) {
 }
 
   return (
-    <div>
-      <NewTodoForm onSubmit={addTodo}/>
-      <h1 className="header">Todo list</h1>
-      <Todolist todos={todos} toggleTodo={toggleTodo} deleteTodos={deleteTodos}/>
+    <div className="principal-container">
+      <button className="mode-btn">Dark Mode</button>
+      <div className="container">
+        <h1 className="header">Todo list</h1>
+        <NewTodoForm onSubmit={addTodo}/>
+        <div className="todo-list-container"> 
+          <Todolist todos={todos} toggleTodo={toggleTodo} deleteTodos={deleteTodos}/>
+        </div>
+      </div>
     </div>
   )
 }

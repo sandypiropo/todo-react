@@ -14,15 +14,16 @@ export function NewTodoForm({onSubmit}) {
     
   return (
     <form onSubmit={handleSubmit} className="new-item-form">
-    <div className="form-row">
-      <label>New Item</label>
+    <div className="div-form-row">
       <input
+        className="rounded-input" 
         value={newItem}
         onChange={e => setNewItem(e.target.value)}
         type="text"
+        placeholder="Write here"
         id="item" />
+        <button className="btn-add">Add</button>
     </div>
-    <button className="btn">Add</button>
   </form>
   )
 }
